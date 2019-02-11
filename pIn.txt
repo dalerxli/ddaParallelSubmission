@@ -1,0 +1,29 @@
+################################################################################
+# Input paramaters for ddscat.par
+################################################################################
+#
+# Input frequency (often a dummy)
+in_wl: .400
+# 
+# Input dielectric data files
+# Make sure the .tab file exists and you have access to it!
+# Use dc_dir and dc_dir_sub OR cd_dir_list. Don't use both.
+dc_dir: /usr/lusers/huz08/dielectrics/agJC.tab 
+dc_dir_sub: /usr/lusers/huz08/dielectrics/SiO2.tab 
+dc_dir_list: /mnt/c/DDA/calcMaterials
+#
+# Dipole spacing
+dip_space: 1
+#
+# Background dielectric constant
+n_back: 1
+#
+################################################################################
+# Electron-beam parameters - Only include when using an electron-beam
+# excitation source!
+################################################################################
+#
+# electron-beam center position
+ebeam_pos: 0 0 0
+# electron-beam kinetic energy 
+ebeam_ke: 200
